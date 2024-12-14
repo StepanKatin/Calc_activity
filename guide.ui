@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1061</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #d9cbc2</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>250</height>
+         </size>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LayoutDirection::RightToLeft</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt;
+background-color: #f0eced;
+font-weight: bold
+</string>
+        </property>
+        <property name="text">
+         <string>Здесь будет написана подсказка для проведения измерений на дозкалибраторе, а также подсказка по пользованию этим приложением </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 16pt;
+background-color: #f0eced</string>
+        </property>
+        <property name="text">
+         <string>Инструкция по измерению на дозкалибраторе:
+1) включить прибор (кнопка сзади)
+2) дать ему прогреться 10-15 минут, 
+3) нажать кнопку OTHER, убедится что коэффициент для распадающихся проб 11,3; для равновесного раствора 11,5
+4) поставить пробу на полочку прободержателя, опустить пробу в камеру дозкалибратора, записать время измерения и значение 
+5) засечь 2 минуты, записать значение по истечению таймера, повторить п.5 пять раз. 
+6) занести данные в журнал, где обозначить дату/время разделения, номер пробы, тип прибора, время каждого измерения (или экспозицию), значения активности
+7)провести расчёт в Excel файле (папка германий68/калибровки пробирка 5мл) 
+8) (опционально) оставить товарищами спектрометристам для расчёта</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
