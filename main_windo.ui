@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #E9E9E9</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_menu">
+           <property name="styleSheet">
+            <string notr="true">font: 25pt;
+font-weight: bold;
+border: true;
+border-radius: 10px;
+font-color: #151716;
+border: 2px solid #B0B0B0;
+width: 700px;
+height: 300px;</string>
+           </property>
+           <property name="text">
+            <string>На чем измеряем?</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_ppd">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{ 
+background-color: #0095FF;
+font: 18pt;
+font-weight: bold;
+color: #FFFFFF;
+border-radius: 10px;
+font-color: #151716;
+border: 2px solid #FFFFFF;
+width: 400px;
+height: 100px
+}
+
+QPushButton:hover { 
+background-color: rgba(0,149,255, 100);
+}
+QPushButton:pressed { 
+background-color:  rgba(0,149,255, 70);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>ППД спектрометр</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_menu_dozcal">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{ 
+background-color: #0095FF;
+font: 18pt;
+font-weight: bold;
+color: #FFFFFF;
+border-radius: 10px;
+font-color: #151716;
+border: 2px solid #FFFFFF;
+width: 400px;
+height: 100px
+}
+
+QPushButton:hover { 
+background-color: rgba(0,149,255, 99);
+}
+QPushButton:pressed { 
+background-color:  rgba(0,149,255, 70);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Дозкалибратор</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_menu_guide">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{ 
+background-color: #E9E9E9;
+font: 18pt;
+color: #0095ff;
+border-radius: 10px;
+border: 2px solid #94D3FE;
+width: 400px;
+height: 100px;
+}
+QPushButton:hover { 
+color: rgba(0,149,255, 99);
+border: 2px solid rgba(148,211,254, 99);
+}
+QPushButton:pressed { 
+color: rgba(0,149,255, 70);
+border: 2px solid rgba(148,211,254, 70);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Подсказка</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

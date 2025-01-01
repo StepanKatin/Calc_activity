@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #d9cbc2</string>
+   <string notr="true">background-color: #E9E9E9;</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="0" column="0">
@@ -29,7 +29,10 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QDateEdit" name="date_ppd_mes">
+         <widget class="QDateEdit" name="date_dozc_day">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
           <property name="maximumSize">
            <size>
             <width>250</width>
@@ -38,13 +41,30 @@
           </property>
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced;
+background-color: #D6D6D6;
+color: #151716;
+border: 2px solid #5c5c5c;
+border-radius: 5px;
+
 </string>
+          </property>
+          <property name="dateTime">
+           <datetime>
+            <hour>18</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2024</year>
+            <month>7</month>
+            <day>31</day>
+           </datetime>
+          </property>
+          <property name="currentSection">
+           <enum>QDateTimeEdit::Section::DaySection</enum>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="label_6">
+         <widget class="QLabel" name="label_dozc_timsep">
           <property name="maximumSize">
            <size>
             <width>250</width>
@@ -53,9 +73,10 @@ background-color: #f0eced;
           </property>
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced;
-font-weight: bold;
-border-radius: 10px</string>
+
+color: #151716;;
+border-radius: 5px;
+border: 2px solid #B0B0B0;</string>
           </property>
           <property name="text">
            <string>TimeSep</string>
@@ -66,7 +87,7 @@ border-radius: 10px</string>
          </widget>
         </item>
         <item>
-         <widget class="QTimeEdit" name="timeEdit">
+         <widget class="QTimeEdit" name="timeEdit_dozc_timesep">
           <property name="maximumSize">
            <size>
             <width>250</width>
@@ -75,12 +96,22 @@ border-radius: 10px</string>
           </property>
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced</string>
+background-color: #D6D6D6;
+color: #151716;
+border: 2px solid #5c5c5c;
+border-radius: 5px;
+</string>
+          </property>
+          <property name="keyboardTracking">
+           <bool>true</bool>
+          </property>
+          <property name="currentSection">
+           <enum>QDateTimeEdit::Section::MinuteSection</enum>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="label_5">
+         <widget class="QLabel" name="label_dozc_usil">
           <property name="maximumSize">
            <size>
             <width>250</width>
@@ -89,9 +120,9 @@ background-color: #f0eced</string>
           </property>
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced;
-font-weight: bold;
-border-radius: 10px</string>
+color: #151716;;
+border-radius: 5px;
+border: 2px solid #B0B0B0;</string>
           </property>
           <property name="text">
            <string>Усиление</string>
@@ -105,7 +136,7 @@ border-radius: 10px</string>
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox_ppd_seria">
+         <widget class="QComboBox" name="comboBox_dozc_usil">
           <property name="maximumSize">
            <size>
             <width>200</width>
@@ -115,13 +146,13 @@ border-radius: 10px</string>
           <property name="styleSheet">
            <string notr="true">QComboBox{
 font-size: 16pt;
-color: black;}
+color: #FFFFFF;}
 
 QComboBox {
-background-color: #be8164}
+background-color: #0095FF}
 
 QComboBox:item{
-color: black:}
+color: FFFFF:}
 </string>
           </property>
           <item>
@@ -141,7 +172,7 @@ color: black:}
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QLabel" name="label_3">
+         <widget class="QLabel" name="label_dozc_timestart">
           <property name="maximumSize">
            <size>
             <width>350</width>
@@ -150,9 +181,10 @@ color: black:}
           </property>
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced;
-font-weight: bold;
-border-radius: 10px</string>
+
+color: #151716;;
+border-radius: 5px;
+border: 2px solid #B0B0B0;</string>
           </property>
           <property name="text">
            <string>Время начала измерения</string>
@@ -163,7 +195,7 @@ border-radius: 10px</string>
          </widget>
         </item>
         <item>
-         <widget class="QTimeEdit" name="timeEdit_ppd_1">
+         <widget class="QTimeEdit" name="timeEdit_dozc_timestart">
           <property name="maximumSize">
            <size>
             <width>250</width>
@@ -172,12 +204,17 @@ border-radius: 10px</string>
           </property>
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced</string>
+background-color: #D6D6D6;
+color: #151716;
+border: 2px solid #5c5c5c;
+border-radius: 5px;
+
+</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="label_4">
+         <widget class="QLabel" name="label_dozc_timeplus">
           <property name="maximumSize">
            <size>
             <width>250</width>
@@ -186,9 +223,10 @@ background-color: #f0eced</string>
           </property>
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced;
-font-weight: bold;
-border-radius: 10px</string>
+
+color: #151716;;
+border-radius: 5px;
+border: 2px solid #B0B0B0;</string>
           </property>
           <property name="text">
            <string>+t, min</string>
@@ -199,7 +237,7 @@ border-radius: 10px</string>
          </widget>
         </item>
         <item>
-         <widget class="QTimeEdit" name="timeEdit_ppd_2">
+         <widget class="QTimeEdit" name="timeEdit_dozc_timeplus">
           <property name="maximumSize">
            <size>
             <width>250</width>
@@ -208,7 +246,15 @@ border-radius: 10px</string>
           </property>
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced</string>
+background-color: #D6D6D6;
+color: #151716;
+border: 2px solid #5c5c5c;
+border-radius: 5px;
+
+</string>
+          </property>
+          <property name="currentSection">
+           <enum>QDateTimeEdit::Section::HourSection</enum>
           </property>
          </widget>
         </item>
@@ -216,18 +262,54 @@ background-color: #f0eced</string>
       </item>
       <item>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="1" column="0">
-         <widget class="QLineEdit" name="lineEdit_ppd_data_1">
+        <item row="5" column="0">
+         <widget class="QLineEdit" name="lineEdit_dozc_data_5">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt;
+color: #151716;
+background-color: #FFFFFF;
+border-radius: 10px;
+border: 1px solid #B0B0B0;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QTableView" name="tableView_dozcalc_result">
           <property name="maximumSize">
            <size>
             <width>16777215</width>
-            <height>100</height>
+            <height>250</height>
            </size>
           </property>
           <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLineEdit" name="lineEdit_dozc_data_4">
+          <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced;
-border-radius: 10px</string>
+color: #151716;
+background-color: #FFFFFF;
+border-radius: 10px;
+border: 1px solid #B0B0B0;
+height: 35px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="lineEdit_dozc_data_1">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt;
+color: #151716;
+background-color: #FFFFFF;
+border-radius: 10px;
+border: 1px solid #B0B0B0;
+height: 35px;</string>
           </property>
           <property name="text">
            <string/>
@@ -238,91 +320,91 @@ border-radius: 10px</string>
          </widget>
         </item>
         <item row="3" column="0">
-         <widget class="QLineEdit" name="lineEdit_ppd_data_3">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>100</height>
-           </size>
-          </property>
+         <widget class="QLineEdit" name="lineEdit_dozc_data_3">
           <property name="styleSheet">
            <string notr="true">font: 16pt;
-background-color: #f0eced;
-border-radius: 10px</string>
+color: #151716;
+background-color: #FFFFFF;
+border-radius: 10px;
+border: 1px solid #B0B0B0;
+height: 35px;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignmentFlag::AlignCenter</set>
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
-         <widget class="QLineEdit" name="lineEdit_ppd_data_2">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font: 16pt;
-background-color: #f0eced;
-border-radius: 10px</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignmentFlag::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="0">
-         <widget class="QLineEdit" name="lineEdit_ppd_data_4">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>100</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font: 16pt;
-background-color: #f0eced;
-border-radius: 10px</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignmentFlag::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="0">
-         <widget class="QPushButton" name="pushButton_ppd_calc">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>150</height>
-           </size>
-          </property>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="pushButton_dozc_calc">
           <property name="layoutDirection">
            <enum>Qt::LayoutDirection::LeftToRight</enum>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: #be8164;
+           <string notr="true">QPushButton{ 
+background-color: #0095FF;
 font: 18pt;
-color: black;
-font-weight: bold;</string>
+font-weight: bold;
+color: #FFFFFF;
+border-radius: 10px;
+font-color: #151716;
+border: 2px solid #FFFFFF;
+width: 400px;
+height: 100px
+}
+
+QPushButton:hover { 
+background-color: rgba(0,149,255, 100);
+}
+QPushButton:pressed { 
+background-color:  rgba(0,149,255, 70);
+}
+</string>
           </property>
           <property name="text">
            <string>Рассчет</string>
           </property>
          </widget>
         </item>
-        <item row="6" column="0">
-         <widget class="QTableView" name="tableView_dozcalc_result">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>250</height>
-           </size>
-          </property>
+        <item row="2" column="0">
+         <widget class="QLineEdit" name="lineEdit_dozc_data_2">
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">font: 16pt;
+color: #151716;
+background-color: #FFFFFF;
+border-radius: 10px;
+border: 1px solid #B0B0B0;
+height: 35px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QPushButton" name="pushButton_dozc_addline">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{ 
+background-color: #0095FF;
+font: 18pt;
+font-weight: bold;
+color: #FFFFFF;
+border-radius: 10px;
+font-color: #151716;
+border: 2px solid #FFFFFF;
+width: 400px;
+height: 50px;
+}
+
+QPushButton:hover { 
+background-color: rgba(0,149,255, 100);
+}
+QPushButton:pressed { 
+background-color:  rgba(0,149,255, 70);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Добавить измерение</string>
           </property>
          </widget>
         </item>
